@@ -29,8 +29,13 @@ appleCounter(obj3); // => 3
 ***********************************************************************/
 
 function appleCounter(appleObj) {
-  // Your code here
+  let applecount = 0
+  for(const key in appleObj){
+    if(key.toLowerCase().includes("apple")){
+      applecount +=1
+    }
+  }
+  return applecount
 }
-
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = appleCounter;
